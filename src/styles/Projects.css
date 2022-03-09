@@ -1,0 +1,31 @@
+.projects_main {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.projects_box {
+  /* border-radius: 10px */
+  background-size: cover;
+  background-position: top;
+  box-shadow: 8px 8px 0px -4px #38a169;
+  filter: grayscale(100%);
+  transition: all 2s;
+  cursor: pointer;
+}
+
+.projects_box .text {
+  box-shadow: 6px 6px 0px -3px #38a169;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.projects_box:hover {
+  transition: background-position 8s, box-shadow 8s, filter 1s;
+  filter: none;
+  box-shadow: 8px -8px 0px -4px #38a169;
+  background-position: bottom;
+}
+
+.projects_box:hover .text {
+  transition: all 0.5s;
+  opacity: 1;
+}

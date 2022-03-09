@@ -1,0 +1,12 @@
+.about_main {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.about_heading {
+  font-family: "JetBrains Mono", monospace;
+}
+
+.about_icon {
+  position: relative;
+  top: -3px;
+}
