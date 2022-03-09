@@ -53,7 +53,14 @@ function Hero() {
           _hover={{ cursor: "pointer" }}
           className="hero_about"
         >
-          <Text textAlign="center" color="green.500">
+          <Text
+            textAlign="center"
+            color="green.500"
+            _hover={{
+              color: "green.200",
+              cursor: "pointer",
+            }}
+          >
             More about me <Icon className="hero_icon" as={ImArrowDown2}></Icon>
           </Text>
         </Box>

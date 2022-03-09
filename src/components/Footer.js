@@ -1,4 +1,13 @@
-import { Flex, Link, Center, Box, Icon, Circle } from "@chakra-ui/react";
+import {
+  Flex,
+  Link,
+  Center,
+  Box,
+  Icon,
+  Circle,
+  LinkOverlay,
+  LinkBox,
+} from "@chakra-ui/react";
 
 import {
   ImGithub,
@@ -12,10 +21,9 @@ import "../styles/Footer.css";
 import theme from "../styles/theme";
 
 function Footer() {
-  const heroAnchor = document.querySelector(".hero_main");
-
   const handleClick = (anchor) => {
-    anchor.scrollIntoView({ behavior: "smooth" });
+    const heroAnchor = document.querySelector(".hero_main");
+    heroAnchor.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -24,49 +32,71 @@ function Footer() {
         <Flex flexDirection="column" alignItems="center">
           <Link
             mt={3}
-            fontSize={10}
+            fontSize={12}
             className="footer_email"
             mb={3}
             color="green.500"
+            href="mailto:jon@lienhard.dev"
           >
             jon@lienhard.dev
           </Link>
-          <Box className="footer_icons" mb={3}>
-            <Icon
-              mr={3}
-              as={ImGithub}
-              w={5}
-              h={5}
-              _hover={{ color: theme.colors.lightContrast, cursor: "pointer" }}
-            />
-            <Icon
-              mr={3}
-              as={ImLinkedin}
-              w={5}
-              h={5}
-              _hover={{ color: theme.colors.lightContrast, cursor: "pointer" }}
-            />
-            <Icon
-              mr={3}
-              as={ImFacebook2}
-              w={5}
-              h={5}
-              _hover={{ color: theme.colors.lightContrast, cursor: "pointer" }}
-            />
-            <Icon
-              as={ImNpm}
-              w={5}
-              h={5}
-              _hover={{ color: theme.colors.lightContrast, cursor: "pointer" }}
-            />
-          </Box>
+          <Flex className="footer_icons" mb={3}>
+            <LinkBox
+              _hover={{
+                color: "green.500",
+                cursor: "pointer",
+              }}
+            >
+              <LinkOverlay href="https://github.com/hardethanolninja">
+                <Icon
+                  mr={3}
+                  as={ImGithub}
+                  w={5}
+                  h={5}
+                  _hover={{
+                    color: theme.colors.lightContrast,
+                    cursor: "pointer",
+                  }}
+                />
+              </LinkOverlay>
+            </LinkBox>
+            <LinkBox
+              _hover={{
+                color: "green.500",
+                cursor: "pointer",
+              }}
+            >
+              <LinkOverlay href="https://www.linkedin.com/in/jonathan-lienhard-346b75210/">
+                <Icon
+                  mr={3}
+                  as={ImLinkedin}
+                  w={5}
+                  h={5}
+                  _hover={{
+                    color: theme.colors.lightContrast,
+                    cursor: "pointer",
+                  }}
+                />
+              </LinkOverlay>
+            </LinkBox>
+            <LinkBox
+              _hover={{
+                color: "green.500",
+                cursor: "pointer",
+              }}
+            >
+              <LinkOverlay href="https://www.facebook.com/jonathan.lienhard">
+                <Icon mr={3} as={ImFacebook2} w={5} h={5} />
+              </LinkOverlay>
+            </LinkBox>
+          </Flex>
           <Box
             fontSize={10}
             color={theme.colors.darkText}
             className="footer_copyright"
             mb={3}
           >
-            ©2022 Jon Lienhard
+            © <span>{new Date().getFullYear()}</span> Jon Lienhard
           </Box>
           <Circle
             mb={3}
@@ -74,12 +104,10 @@ function Footer() {
             bg="green.500"
             color={theme.colors.background}
             _hover={{
-              background: theme.colors.lightContrast,
+              background: "green.200",
               cursor: "pointer",
             }}
-            onClick={() => {
-              handleClick(heroAnchor);
-            }}
+            onClick={handleClick}
           >
             <Icon as={ImArrowUp2} />
           </Circle>
