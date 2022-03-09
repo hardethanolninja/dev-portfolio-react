@@ -9,13 +9,7 @@ import {
   LinkBox,
 } from "@chakra-ui/react";
 
-import {
-  ImGithub,
-  ImLinkedin,
-  ImFacebook2,
-  ImNpm,
-  ImArrowUp2,
-} from "react-icons/im";
+import { ImGithub, ImLinkedin, ImFacebook2, ImArrowUp2 } from "react-icons/im";
 
 import "../styles/Footer.css";
 import theme from "../styles/theme";
