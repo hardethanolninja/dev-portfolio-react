@@ -1,6 +1,5 @@
-import { Box, Heading, Text, SimpleGrid, Image } from "@chakra-ui/react";
+import { Box, Heading, Text, SimpleGrid } from "@chakra-ui/react";
 
-import testImg from "../images/test.jpg";
 import amazon from "../images/amazon.png";
 import apple from "../images/apple.png";
 import ford from "../images/ford.png";

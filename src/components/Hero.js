@@ -44,7 +44,7 @@ function Hero() {
             color="green.300"
           >
             I write code and <br />
-            occasionally design websites.
+            develop websites.
           </Heading>
         </Box>
         <Spacer />

@@ -1,10 +1,8 @@
 import {
   Box,
   Flex,
-  Spacer,
   Heading,
   Text,
-  Icon,
   List,
   ListItem,
   ListIcon,
@@ -19,7 +17,6 @@ import {
   DiNodejs,
   DiPhp,
   DiReact,
-  DiVisualstudio,
   DiWordpress,
 } from "react-icons/di";
 
