@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.24849431.css",
+    "main.js": "/static/js/main.e6ba51f4.js",
+    "static/js/787.99cee9f6.chunk.js": "/static/js/787.99cee9f6.chunk.js",
+    "static/media/steelseries.png": "/static/media/steelseries.1ec1a5436558fc4eef33.png",
+    "static/media/amazon.png": "/static/media/amazon.5374ea0247864d5b2dfc.png",
+    "static/media/ford.png": "/static/media/ford.a17df0a93385c5c7f919.png",
+    "static/media/microsoft.png": "/static/media/microsoft.10c697fe2b0e1d3e523f.png",
+    "static/media/apple.png": "/static/media/apple.eb60d5ecfdaf34bfb5e3.png",
+    "static/media/jetbrains-mono-all-500-normal.woff": "/static/media/jetbrains-mono-all-500-normal.60952a12528b7d09ca19.woff",
+    "static/media/jetbrains-mono-latin-500-normal.woff2": "/static/media/jetbrains-mono-latin-500-normal.1665128c96e2d5f27f6a.woff2",
+    "static/media/jetbrains-mono-latin-ext-500-normal.woff2": "/static/media/jetbrains-mono-latin-ext-500-normal.a158f56abaeedf3fdb0e.woff2",
+    "static/media/jetbrains-mono-cyrillic-500-normal.woff2": "/static/media/jetbrains-mono-cyrillic-500-normal.ab15ee86a18d85e5006d.woff2",
+    "static/media/jetbrains-mono-greek-500-normal.woff2": "/static/media/jetbrains-mono-greek-500-normal.791c6931d7b7fceebd05.woff2",
+    "static/media/jetbrains-mono-vietnamese-500-normal.woff2": "/static/media/jetbrains-mono-vietnamese-500-normal.64ae2492be6fd53edff8.woff2",
+    "static/media/jetbrains-mono-cyrillic-ext-500-normal.woff2": "/static/media/jetbrains-mono-cyrillic-ext-500-normal.5e592246030ae1d023a5.woff2",
+    "index.html": "/index.html",
+    "main.24849431.css.map": "/static/css/main.24849431.css.map",
+    "main.e6ba51f4.js.map": "/static/js/main.e6ba51f4.js.map",
+    "787.99cee9f6.chunk.js.map": "/static/js/787.99cee9f6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24849431.css",
+    "static/js/main.e6ba51f4.js"
+  ]
+}
